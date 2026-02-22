@@ -44,7 +44,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="max-w-5xl mx-auto px-6 lg:px-0 py-36 text-center"
+      className="max-w-5xl mx-auto px-4 lg:px-0 py-36 text-center"
     >
       <Title title={"services"} subTitle={"What we build"} />
 
