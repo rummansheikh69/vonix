@@ -7,7 +7,7 @@ const interSans = Inter({
 });
 
 export const metadata = {
-  title: "Zylo — Digital Branding & Web Systems",
+  title: "Onex — Digital Systems Branding & Automation for Online Businesses",
   description: "Digital branding & web systems for online businesses",
 };
 
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${interSans.className}  bg-black text-zinc-100 antialiased`}
+        className={`${interSans.className}   bg-[radial-gradient(350px_350px_at_top_left,#080808,transparent)] text-zinc-100 antialiased`}
       >
         {children}
       </body>
