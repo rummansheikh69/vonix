@@ -5,6 +5,11 @@
   --color-text-gray: #737373;
   --color-icon: #737373;
 }
+
+@utility no-scrollbar {
+  @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
