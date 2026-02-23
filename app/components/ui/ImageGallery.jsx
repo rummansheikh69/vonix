@@ -197,7 +197,7 @@ function ImageGallery({ images }) {
 
             {/* Thumbnails */}
             {/* Mobile (scrollable row) */}
-            <div className="mt-1 block lg:hidden overflow-x-auto py-2">
+            {/* <div className="mt-1 block lg:hidden overflow-x-auto py-2">
               <div className="flex gap-3 w-max">
                 {images.map((img, index) => (
                   <div
@@ -218,15 +218,15 @@ function ImageGallery({ images }) {
                   </div>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Desktop (grid) */}
-            <div className="mt-4 hidden lg:grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-3">
+            <div className="mt-4 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-3">
               {images.map((img, index) => (
                 <div
                   key={img + "-desktop"}
                   onClick={() => selectImage(index)}
-                  className={`p-1 rounded-md border h-32 cursor-pointer transition-all duration-200 ${
+                  className={`p-1 rounded-md border h-20 md:h-32 cursor-pointer transition-all duration-200 ${
                     index === current
                       ? "border-[#2d2d2d] ring-2 ring-[#2d2d2d]"
                       : "border-primary-border"
@@ -290,22 +290,22 @@ function ImageGallery({ images }) {
             </div>
 
             {/* Bottom Thumbnails */}
-            <div className="w-full max-w-5xl mt-3 px-4">
-              <div className="flex gap-4 justify-center overflow-x-auto py-2">
+            <div className="w-full max-w-5xl mt-3 px-2">
+              <div className="flex gap-3 justify-center overflow-x-auto py-2">
                 {images.map((img, index) => (
                   <div
                     key={img}
                     onClick={() => selectImage(index)}
-                    className={`w-20 h-14 rounded-md cursor-pointer transition-all duration-200 ${
+                    className={`w-20 h-14 rounded-md overflow-hidden border-2 cursor-pointer transition-all duration-200 ${
                       current === index
-                        ? "ring-2 ring-[#2d2d2d]"
-                        : "opacity-70 hover:opacity-100"
+                        ? " border-[#2d2d2d]"
+                        : "opacity-70 hover:opacity-100 border-transparent"
                     }`}
                   >
                     <img
                       src={img}
                       alt={`thumb-${index}`}
-                      className="w-full h-full object-cover rounded-md"
+                      className="w-full h-full object-cover "
                     />
                   </div>
                 ))}

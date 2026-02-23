@@ -76,7 +76,7 @@ function ProjecrDetailsModal({ onclose }) {
                         key={index}
                         className=" p-3 bg-[#131313] rounded-lg flex items-start gap-2"
                       >
-                        <div className=" flex items-center">
+                        <div className=" md:flex items-center hidden ">
                           <Check
                             className=" text-blue-400 mt-[2px]"
                             size={15}
