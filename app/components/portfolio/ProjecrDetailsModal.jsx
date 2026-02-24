@@ -1,6 +1,8 @@
 import { Check, X } from "lucide-react";
 import { RiTelegram2Fill } from "react-icons/ri";
 import ImageGallery from "../ui/ImageGallery";
+import { usePortfolioStore } from "@/app/store/usePortfolioStore";
+import Link from "next/link";
 
 function ProjecrDetailsModal({ onclose }) {
   const benifits = [
@@ -22,27 +24,23 @@ function ProjecrDetailsModal({ onclose }) {
     },
   ];
 
-  const images = [
-    "https://marketplace.canva.com/EAFauoQSZtY/2/0/1600w/canva-brown-mascot-lion-free-logo-kAK-ljYAGXg.jpg",
-    "https://i.makeagif.com/media/5-18-2015/ZgtMpI.gif",
-    "https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/76499/optimized_product_thumb_stage.jpg",
-    "https://img0-placeit-net.s3-accelerate.amazonaws.com/uploads/stage/stage_image/76499/optimized_product_thumb_stage.jpg",
-  ];
+  const { selectedProject, closeProjectModal } = usePortfolioStore();
+  const images = selectedProject?.images;
   return (
     <div className=" w-full">
       <div className=" w-full ">
         <div className=" w-full h-24 bg-[#131313] border-b border-primary-border px-6 flex items-center justify-between">
           <div>
-            <h2 className=" text-xl font-semibold tracking-tight">
-              Logo Design
+            <h2 className=" text-xl font-semibold tracking-tight capitalize">
+              {selectedProject?.title}
             </h2>
             <h2 className=" text-sm font-semibold tracking-wide uppercase text-text-gray">
-              by vonex
+              by onex
             </h2>
           </div>
 
           <button
-            onClick={onclose}
+            onClick={closeProjectModal}
             className=" cursor-pointer size-12 rounded-full border-primary-border bg-[#1a1a1a] hover:bg-[#1f1f1f] duration-200 flex items-center justify-center"
           >
             <X className=" text-zinc-300" />
@@ -63,9 +61,7 @@ function ProjecrDetailsModal({ onclose }) {
                     Project Details
                   </h1>
                   <p className=" text-left font-medium text-sm text-text-gray mt-2">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor eos voluptate, cumque deleniti quisquam, magnam dicta,
-                    voluptate dolores
+                    {selectedProject?.description}
                   </p>
                   <h1 className=" font-semibold tracking-tight text-xl text-zinc-200 my-3">
                     Benifits
@@ -102,9 +98,11 @@ function ProjecrDetailsModal({ onclose }) {
                       want something similar or even better for your
                       brand/service?
                     </h4>
-                    <button className="bg-white text-black px-6  py-2 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
-                      <RiTelegram2Fill size={16} /> Get a Quote
-                    </button>
+                    <Link href={"https://t.me/onex_to"} target="_blank">
+                      <button className="bg-white text-black px-6  py-2 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
+                        <RiTelegram2Fill size={16} /> Get a Quote
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

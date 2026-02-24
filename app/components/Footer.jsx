@@ -1,5 +1,5 @@
 import { RiTelegram2Fill } from "react-icons/ri";
-import { FiTwitter } from "react-icons/fi";
+import { FaDiscord } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -14,14 +14,22 @@ export default function Footer() {
         </div>
 
         <div className=" flex items-center gap-4">
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://t.me/onex_to"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className=" size-9 rounded-lg border border-primary-border bg-[#0a0a0a] hover:bg-[#111111] duration-200 flex items-center justify-center group cursor-pointer">
               <RiTelegram2Fill className="size-[19px] text-icon group-hover:text-white duration-200" />
             </div>
           </a>
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://discord.gg/T9gDn3d5ZW"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className=" size-9 rounded-lg border border-primary-border bg-[#0a0a0a] hover:bg-[#111111] duration-200 flex items-center justify-center group cursor-pointer">
-              <FiTwitter className="size-[19px] text-icon group-hover:text-white duration-200" />
+              <FaDiscord className="size-[19px] text-icon group-hover:text-white duration-200" />
             </div>
           </a>
         </div>
