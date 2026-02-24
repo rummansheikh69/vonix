@@ -3,6 +3,7 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import { Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp } from "../lib/motion";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -33,9 +34,15 @@ export default function CTA() {
                 No pressure, no sales pitch <br />— just a conversation about
                 your project.
               </p>
+               <Link
+        href={"https://t.me/onex_to"}
+        target="_blank"
+        className=" hidden md:block"
+      >
               <button className="bg-white text-black px-6 py-3 rounded-xl flex items-center gap-2 mx-auto hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform cursor-pointer hover:-translate-y-0.5">
                 <Send size={16} /> Start on Telegram
               </button>
+                  </Link>
             </div>
           </div>
         </div>
