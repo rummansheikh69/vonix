@@ -11,7 +11,7 @@ const items = [
     title: "Branding",
     description:
       "A complete visual identity that makes you recognizable and trusted from day one.",
-    price: "150",
+    price: "30",
     tags: ["logos", "brand kits", "identity"],
   },
   {
@@ -19,7 +19,7 @@ const items = [
     title: "Web Development",
     description:
       "Fast, responsive, and conversion-optimized sites — no templates, no compromises.",
-    price: "900",
+    price: "200",
     tags: ["Landing Pages", "Custom Pages", "APIs"],
   },
   {
@@ -27,7 +27,7 @@ const items = [
     title: "Bot Development",
     description:
       "Custom-built bots designed for communities, automation, moderation, payments, and advanced workflows.",
-    price: "1,200",
+    price: "50",
     tags: ["Telegram Bots", "AI Workflows", "Systems"],
   },
   {
@@ -35,7 +35,7 @@ const items = [
     title: "Custom Software",
     description:
       "Tailored software solutions built specifically for your business operations — secure, scalable, and fully customized.",
-    price: "1,200",
+    price: "350",
     tags: ["Internal Tools", " Systems", "Dashboards"],
   },
 ];
