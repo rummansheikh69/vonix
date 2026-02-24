@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { RiTelegram2Fill } from "react-icons/ri";
 import { fadeUp } from "../lib/motion";
+import Link from "next/link";
 
 export default function Hero() {
   return (
