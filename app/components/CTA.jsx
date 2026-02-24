@@ -3,6 +3,7 @@ import { RiTelegram2Fill } from "react-icons/ri";
 import { Send } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp } from "../lib/motion";
+import {Link} from "next/link
 
 export default function CTA() {
   return (
