@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { menuSlide } from "./anim";
 import Curve from "./curve";
 import { ArrowRight } from "lucide-react";
+import ScrollLink from "./ui/ScrollLink";
 
 export default function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -25,34 +26,34 @@ export default function Navbar() {
           <span>Portfolio</span>
           <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
         </Link>
-        <a
-          href="#services"
+        <ScrollLink
+          hash="#services"
           className="relative text-sm text-zinc-400 hover:text-white duration-200 group"
         >
           <span>Services</span>
           <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
-        </a>
-        <a
-          href="#process"
+        </ScrollLink>
+        <ScrollLink
+          hash="#process"
           className="relative text-sm text-zinc-400 hover:text-white duration-200 group"
         >
           <span>Process</span>
           <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
-        </a>
-        <a
-          href="#why"
+        </ScrollLink>
+        <ScrollLink
+          hash="#why"
           className="relative text-sm text-zinc-400 hover:text-white duration-200 group"
         >
           <span>Why Onex</span>
           <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
-        </a>
-        <a
-          href="#faq"
+        </ScrollLink>
+        <ScrollLink
+          hash="#faq"
           className="relative text-sm text-zinc-400 hover:text-white duration-200 group"
         >
           <span>FAQ</span>
-          <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
-        </a>
+          <div className="group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
+        </ScrollLink>
       </nav>
       <Link
         href={"https://t.me/onex_to"}
@@ -111,50 +112,50 @@ export default function Navbar() {
                       </Link>
                     </li>
                     <li>
-                      <a
-                        href="#services"
+                      <ScrollLink
+                        hash="#services"
                         onClick={() => {
                           setTimeout(() => setIsActive(false), 500);
                         }}
                         className=" hover:text-[#e9e9e9] duration-400"
                       >
                         Services
-                      </a>
+                      </ScrollLink>
                     </li>
                     <li>
-                      <a
-                        href="#process"
+                      <ScrollLink
+                        hash="#process"
                         onClick={() => {
                           setTimeout(() => setIsActive(false), 500);
                         }}
                         className=" hover:text-[#e9e9e9] duration-400"
                       >
                         Process
-                      </a>
+                      </ScrollLink>
                     </li>
 
                     <li>
-                      <a
-                        href="#why"
+                      <ScrollLink
+                        hash="#why"
                         onClick={() => {
                           setTimeout(() => setIsActive(false), 500);
                         }}
                         className=" hover:text-[#e9e9e9] duration-400"
                       >
                         Why Onex
-                      </a>
+                      </ScrollLink>
                     </li>
 
                     <li>
-                      <a
-                        href="#faq"
+                      <ScrollLink
+                        hash="#faq"
                         onClick={() => {
                           setTimeout(() => setIsActive(false), 500);
                         }}
                         className=" hover:text-[#e9e9e9] duration-400"
                       >
                         FAQ
-                      </a>
+                      </ScrollLink>
                     </li>
 
                     <li>
