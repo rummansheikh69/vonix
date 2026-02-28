@@ -35,7 +35,7 @@ function ProjecrDetailsModal({ onclose }) {
               {selectedProject?.title}
             </h2>
             <h2 className=" text-sm font-semibold tracking-wide uppercase text-text-gray">
-              by onex
+              by vonix
             </h2>
           </div>
 
