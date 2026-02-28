@@ -64,10 +64,11 @@ export default function Hero() {
             <RiTelegram2Fill size={16} /> Start on Telegram
           </button>
               </Link>
-          <a href="#services"></a>
+          <a href="#services">
           <button className="border border-zinc-800 px-6 py-3 rounded-xl text-text-gray hover:bg-zinc-900 duration-300 hover:transform cursor-pointer hover:-translate-y-0.5 hover:text-white">
             View Services
           </button>
+          </a>
         </motion.div>
 
         <motion.p
