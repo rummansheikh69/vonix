@@ -60,12 +60,12 @@ export default function Hero() {
         target="_blank"
         className=""
       >
-          <button className="bg-white text-black px-6  py-3 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
+          <button className="bg-white text-black px-6 w-full md:w-max  py-3 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
             <RiTelegram2Fill size={16} /> Start on Telegram
           </button>
               </Link>
           <a href="#services">
-          <button className="border border-zinc-800 px-6 py-3 rounded-xl text-text-gray hover:bg-zinc-900 duration-300 hover:transform cursor-pointer hover:-translate-y-0.5 hover:text-white">
+          <button className="border border-zinc-800 px-6 w-full md:w-max py-3 rounded-xl text-text-gray hover:bg-zinc-900 duration-300 hover:transform cursor-pointer hover:-translate-y-0.5 hover:text-white">
             View Services
           </button>
           </a>
