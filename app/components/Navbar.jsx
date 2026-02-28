@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <header className="max-w-5xl mx-auto px-6 lg:px-0 h-14  flex items-center justify-between fixed top-0 inset-x-0 z-50 backdrop-blur-md">
       <Link href={"/"}>
-        <span className="font-semibold text-lg">Onex</span>
+        <span className="font-semibold text-lg">Vonix</span>
       </Link>
 
       <nav className="hidden md:flex items-center gap-8 text-sm text-zinc-400 lg:ml-24">
