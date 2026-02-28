@@ -98,7 +98,7 @@ function ProjecrDetailsModal({ onclose }) {
                       want something similar or even better for your
                       brand/service?
                     </h4>
-                    <Link href={"https://t.me/onex_to"} target="_blank">
+                    <Link href={"https://t.me/vonixservices"} target="_blank">
                       <button className="bg-white text-black px-6  py-2 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
                         <RiTelegram2Fill size={16} /> Get a Quote
                       </button>
