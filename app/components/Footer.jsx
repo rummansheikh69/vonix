@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="py-12 max-w-5xl mx-auto px-4 md:px-0">
       <div className="flex flex-col md:flex-row gap-4 items-center md:justify-between">
         <div className="  flex items-center gap-4">
-          <span className="font-semibold text-lg">Onex</span>
+          <span className="font-semibold text-lg">Vonix</span>
           <div className=" h-4 border-l border-primary-border" />
           <span className=" text-[13px] font-medium text-text-gray">
             Digital branding & Automation.
@@ -38,7 +38,7 @@ export default function Footer() {
       <div className=" my-7 w-full border-t border-primary-border" />
 
       <h3 className="text-[13px] font-medium text-text-gray/70 text-center md:text-left">
-        &copy; {new Date().getFullYear()} Onex. All rights reserved.
+        &copy; {new Date().getFullYear()} Vonix. All rights reserved.
       </h3>
     </footer>
   );
