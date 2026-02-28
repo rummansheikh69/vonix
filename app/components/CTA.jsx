@@ -35,7 +35,7 @@ export default function CTA() {
                 your project.
               </p>
                <Link
-        href={"https://t.me/onex_to"}
+        href={"https://t.me/vonixservices"}
         target="_blank"
         className=" hidden md:block"
       >
