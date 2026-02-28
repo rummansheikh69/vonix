@@ -7,7 +7,7 @@ const interSans = Inter({
 });
 
 export const metadata = {
-  title: "Onex — Digital Systems Branding & Automation for Online Businesses",
+  title: "Vonix — Digital Systems Branding & Automation for Online Businesses",
   description: "Digital branding & web systems for online businesses",
 };
 
