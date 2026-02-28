@@ -56,9 +56,9 @@ export default function Hero() {
           className="mt-10 flex flex-col md:flex-row  justify-center gap-4"
         >
            <Link
-        href={"https://t.me/onex_to"}
+        href={"https://t.me/vonixservices"}
         target="_blank"
-        className=" hidden md:block"
+        className=""
       >
           <button className="bg-white text-black px-6  py-3 rounded-xl flex items-center justify-center gap-2 font-medium cursor-pointer hover:shadow-[0_0_25px_rgba(255,255,255,0.4)] duration-300 hover:transform  hover:-translate-y-0.5">
             <RiTelegram2Fill size={16} /> Start on Telegram
