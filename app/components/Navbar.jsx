@@ -143,7 +143,7 @@ export default function Navbar() {
                         className=" hover:text-[#e9e9e9] duration-400"
                       >
                         Why Vonix
-                      </ScrollLink>
+                    </ScrollLink>
                     </li>
 
                     <li>
