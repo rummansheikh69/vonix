@@ -159,7 +159,7 @@ export default function Navbar() {
                     </li>
 
                     <li>
-                      <Link href={"https://t.me/onex_to"} target="_blank">
+                      <Link href={"https://t.me/vonixservices"} target="_blank">
                         <button className="border border-zinc-800 px-4 py-2 text-xs rounded-lg text-black bg-white flex items-center gap-2 cursor-pointer">
                           <RiTelegram2Fill size={16} /> Start on Telegram
                         </button>
