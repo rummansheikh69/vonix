@@ -37,7 +37,7 @@ export default function Features() {
       id="why"
       className="max-w-5xl mx-auto px-6 lg:px-0 py-32 text-center"
     >
-      <Title title={"Why onex"} subTitle={"Built different"} />
+      <Title title={"Why vonix"} subTitle={"Built different"} />
 
       <div className="grid md:grid-cols-3 gap-6">
         {features.map((feature, i) => (
