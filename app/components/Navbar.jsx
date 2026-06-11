@@ -44,7 +44,7 @@ export default function Navbar() {
           hash="#why"
           className="relative text-sm text-zinc-400 hover:text-white duration-200 group"
         >
-          <span>Why Onex</span>
+          <span>Why Vonix</span>
           <div className=" group-hover:w-full duration-200 w-0 h-[1px] absolute -bottom-1 left-0 bg-gradient-to-r from-zinc-400 to-transparent"></div>
         </ScrollLink>
         <ScrollLink
